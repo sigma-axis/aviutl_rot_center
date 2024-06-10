@@ -4,7 +4,7 @@
 
 ついでにオブジェクトを上下左右揃えにできるフィルタも一緒に同梱しています． ~~（抱き合わせ商法）~~
 
-@nazonoSAUNA 版の patch.aul の機能の，拡張編集にフィルタ効果を追加するプラグインの練習です．
+[nazonoSAUNA フォーク版の patch.aul](https://github.com/nazonoSAUNA/patch.aul) の機能の，拡張編集にフィルタ効果を追加するプラグインの練習です．
 
 ![操作UI](https://github.com/sigma-axis/aviutl_rot_center/assets/132639613/05f74496-036b-4404-baa2-715a1f52acea)
 
