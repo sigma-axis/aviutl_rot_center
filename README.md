@@ -6,6 +6,8 @@
 
 @nazonoSAUNA 版の patch.aul の機能の，拡張編集にフィルタ効果を追加するプラグインの練習です．
 
+![操作UI](https://github.com/sigma-axis/aviutl_rot_center/assets/132639613/05f74496-036b-4404-baa2-715a1f52acea)
+
 ## 動作要件
 
 - AviUtl 1.10 + 拡張編集 0.92
@@ -95,8 +97,6 @@
 
   0. You just DO WHAT THE FUCK YOU WANT TO.
 ```
-
-# Credits
 
 #  Credits
 
