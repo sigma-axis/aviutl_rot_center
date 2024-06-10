@@ -78,32 +78,21 @@
 
 ## 改版履歴
 
-- v1.00
+- **v1.01** (2024-06-11)
+
+  - アルファチャンネルなしのオブジェクトに対する高速化の恩恵を受けられるよう変更．
+
+  - ライセンス表示を CC0 に変更．
+
+- **v1.00** (2024-06-11)
 
   - 初版．
 
 
 ## ライセンス・免責事項
 
-このプログラムの利用・改変・再頒布等に関しては WTFPL ライセンスに従うものとします．
+このプログラムの利用・改変・再頒布等に関しては CC0 として扱うものとします．
 
----
-
-```
-            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-                    Version 2, December 2004
-
- Copyright (C) 2024 sigma-axis
-
- Everyone is permitted to copy and distribute verbatim or modified
- copies of this license document, and changing it is allowed as long
- as the name is changed.
-
-            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
-
-  0. You just DO WHAT THE FUCK YOU WANT TO.
-```
 
 #  Credits
 

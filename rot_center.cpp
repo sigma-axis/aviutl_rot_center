@@ -11,7 +11,7 @@ using byte = uint8_t;
 ////////////////////////////////
 // 仕様書．
 ////////////////////////////////
-#define PLUGIN_VERSION	"v1.00"
+#define PLUGIN_VERSION	"v1.01"
 #define PLUGIN_AUTHOR	"sigma-axis"
 #define FILTER_INFO_FMT(name, ver, author)	(name##" "##ver##" by "##author)
 #define FILTER_INFO(name)	constexpr char filter_name[] = name, info[] = FILTER_INFO_FMT(name, PLUGIN_VERSION, PLUGIN_AUTHOR)
@@ -50,7 +50,8 @@ namespace rot_center
 	BOOL func_proc(ExEdit::Filter* efp, ExEdit::FilterProcInfo* efpip);
 
 	inline constinit ExEdit::Filter filter = {
-		.flag = ExEdit::Filter::Flag::Effect,
+		.flag = ExEdit::Filter::Flag::Effect |
+			static_cast<ExEdit::Filter::Flag>(1 << 6), // アルファチャンネルなし対応．
 		.name = const_cast<char*>(filter_name),
 		.track_n = std::size(track_names),
 		.track_name = const_cast<char**>(track_names),
@@ -99,7 +100,8 @@ namespace align
 	int32_t func_window_init(HINSTANCE hinstance, HWND hwnd, int y, int base_id, int sw_param, ExEdit::Filter* efp);
 
 	inline constinit ExEdit::Filter filter = {
-		.flag = ExEdit::Filter::Flag::Effect,
+		.flag = ExEdit::Filter::Flag::Effect |
+			static_cast<ExEdit::Filter::Flag>(1 << 6), // アルファチャンネルなし対応．
 		.name = const_cast<char*>(filter_name),
 		.track_n = std::size(track_names),
 		.track_name = const_cast<char**>(track_names),
