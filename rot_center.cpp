@@ -11,7 +11,7 @@ using byte = uint8_t;
 ////////////////////////////////
 // 仕様書．
 ////////////////////////////////
-#define PLUGIN_VERSION	"v1.01"
+#define PLUGIN_VERSION	"v1.02-beta1"
 #define PLUGIN_AUTHOR	"sigma-axis"
 #define FILTER_INFO_FMT(name, ver, author)	(name##" "##ver##" by "##author)
 #define FILTER_INFO(name)	constexpr char filter_name[] = name, info[] = FILTER_INFO_FMT(name, PLUGIN_VERSION, PLUGIN_AUTHOR)
@@ -51,6 +51,7 @@ namespace rot_center
 
 	inline constinit ExEdit::Filter filter = {
 		.flag = ExEdit::Filter::Flag::Effect |
+			ExEdit::Filter::Flag::BasicEffect |
 			static_cast<ExEdit::Filter::Flag>(1 << 6), // アルファチャンネルなし対応．
 		.name = const_cast<char*>(filter_name),
 		.track_n = std::size(track_names),
